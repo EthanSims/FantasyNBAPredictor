@@ -1,9 +1,11 @@
+# modeltrainer - trains the machine learning model to predict fantasy points. Includes code which helped me to derive 
+#                optimal hyperparameters, features, and ML algorithm.
+# author: Ethan Sims
 from sklearn.linear_model import LinearRegression, ElasticNet, SGDRegressor, BayesianRidge 
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.svm import LinearSVR
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import mean_squared_error as MSE
-from sklearn.feature_selection import RFECV
 
 import numpy as np
 
